@@ -1,13 +1,30 @@
-ul.nav_bar {
-  list-style-type: none;
+.nav_bar {
+  display:flex;
+  flex-direction: row;
+  flex: 1 0 auto;
+  justify-content: flex-center;
+  align-items: center;
   margin: 0px;
   padding:0px;
+  margin-right: 10px;
+  height:30px;
+
+  list-style-type: none;
   background: #2b2b2b;
+
 }
 
-ul.nav_bar li a {
+.nav_bar a {
   text-align: center;
   color:white;
   text-decoration: none;
+  padding: 5px;
+  transition: 0.5s ease;
+}
 
+.nav_bar a:hover{
+  text-align: center;
+  background:black;
+  text-decoration: none;
+  padding: 5px;
 }
