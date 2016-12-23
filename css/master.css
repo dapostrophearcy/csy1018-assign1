@@ -1,30 +1,75 @@
+/*******************************
+* NAVIGATION                   *
+*******************************/
+
+body{margin:auto;} /* Fix for whitespace around navbar */
+
 .nav_bar {
   display:flex;
   flex-direction: row;
-  flex: 1 0 auto;
-  justify-content: flex-center;
+  /*flex: 1 0 auto;*/
+  justify-content: flex-end;
   align-items: center;
-  margin: 0px;
-  padding:0px;
-  margin-right: 10px;
-  height:30px;
-
+  height: 7em;
   list-style-type: none;
-  background: #2b2b2b;
-
+  background: #F44336;
+  font-family: 'Lato', sans-serif;
 }
 
-.nav_bar a {
+#nav_title a {
+  align-self: flex-start;
   text-align: center;
-  color:white;
+  color:#FFEBEE;
   text-decoration: none;
-  padding: 5px;
-  transition: 0.5s ease;
+  font-family: 'Pacifico', cursive;
+  font-size: 45px ;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-right:100px;
 }
 
-.nav_bar a:hover{
+.nav_button a {
   text-align: center;
-  background:black;
+  color:#FFEBEE;
   text-decoration: none;
-  padding: 5px;
+  padding: 15px;
+  transition: 0.2s ease;
+}
+
+.nav_button a:hover{
+  border-bottom: 5px solid #FFEBEE;
+}
+
+.circle{
+  width:200px;
+  height:200px;
+  position: absolute;
+  border-radius: 50%;
+  border-color:black;
+  border-width:10px;
+}
+
+/*******************************
+* TEXT CONTENT                 *
+*******************************/
+h1{
+  font-family: 'Lato', sans-serif;
+  opacity:87%;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+h2{
+  font-family: 'Lato', sans-serif;
+  opacity:87%;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+  opacity:54%;
+  margin-left: 7%;
+  margin-right: 12%;
+}
+a{
+  opacity: 87%;
 }
