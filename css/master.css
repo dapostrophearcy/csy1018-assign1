@@ -10,7 +10,8 @@
 
   .aside{
     flex:1;
-    display:flex-column;
+    display:flex;
+    flex-direction: column;
   }
 
   .main{
@@ -29,7 +30,8 @@
 
   .aside{
     flex:2;
-    display:flex-column;
+    display:flex;
+    flex-direction: column;
   }
 
   .main{
@@ -83,7 +85,6 @@
   display:flex;
   background: #C62828;
   color:#FFEBEE;
-  opacity: 87%;
 }
 
 .page-title{
@@ -116,7 +117,6 @@
 .copyright{flex:1;}
 .contact{
   flex:1;
-  display:flex-column;
 }
 
 /* PHONE BLOCK POSITIONING               */
