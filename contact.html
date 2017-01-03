@@ -3,46 +3,147 @@
 
   <head>
 
-    <title>Contact</title>
+    <title>darcymorley - Contact</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/master.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="tab-icon" href="images/favicon.ico">
 
   </head>
 
   <body class="site">
 
-      <!-- NAVIGATION BAR, sits at the top of the screen and provides
-      button links to other parts of the site -->
+    <div class="not-footer">
+
     <header>
-        <ul class="nav_bar">
-          <li id = "nav_title"><a href = "index.html" alt = "D'Arcy Morley's Portfolio, click to go to homepage.">darcymorley</a></li>
-          <li class="nav_button"><a href="index.html" alt="Navigate to the home page.">Home</a></li>
-          <li class="nav_button"><a href="cv.html" alt="Navigate to CV page.">Curriculum Vitae</a></li>
-          <li class="nav_button"><a href="bio.html" alt="Navigate to bio page.">Biography</a></li>
-          <li class="nav_button"><a href="contact.html" alt="Navigate to contact page.">Contact</a></li>
+
+      <ul class="nav">
+        <li id="title"><a href = "index.html" alt = "D'Arcy Morley's Portfolio, click to go to homepage.">darcymorley</a></li>
+        <li class="button"><a href="index.html" alt="Navigate to the home page.">HOME</a></li>
+        <li class="button"><a href="cv.html" alt="Navigate to CV page.">CV</a></li>
+        <li class="button"><a href="bio.html" alt="Navigate to bio page.">BIO</a></li>
+        <li class="button"><a href="contact.html" alt="Navigate to contact page.">CONTACT</a></li>
       </ul>
+
     </header>
 
-    <!--
-      *A contact page including a static form.
-    -->
-    <main class="site_content">
+    <div class="page-header">
 
-        <h1>Contact</h1>
+      <h1 id="page-title">Contact</h1>
+
+    </div>
+
+    <div class="main-aside">
+
+      <main class ="main">
+
+        <h2>Contact</h2>
 
         <ul class= "contact_info">
-        <!-- INCLUDE IMAGES FOR EACH TO ILLUSTRATE -->
           <li>Phone number</li>
           <li>Email</li>
           <li>Twitter</li>
         </ul>
 
-    </main>
+        <form action="messages.php" method="POST">
 
-    <footer>
-      <h3>D'Arcy Morley 2016 ©</h3>
+          First name:
+          <input type="text" name="firstname" value="Insert your first name here...">
+          <br>
+          Surname:
+          <input type="text" name="surname" value="Insert your surname here...">
+          <br>
+          Message:
+          <textarea name="message" rows="10" cols="30">
+          Insert your message here:
+          </textarea>
+          <br>
+          <input type="submit" value="Submit">
+
+        </form>
+
+      </main>
+
+      <aside class="aside">
+
+        <div class="aside-a">
+
+          <figure>
+            <li class="aside-img">
+              <a href = "bio.html" alt= "Navigate to biography page"><img class="image" src="images/me.png" alt="A portrait picture of D'Arcy Morley." /></a>
+            </li>
+            <figcaption>Biography</figcaption>
+          </figure>
+
+        </div>
+
+        <div class="aside-b">
+
+          <figure>
+            <li class="aside-img">
+              <a href = "cv.html" alt= "Navigate to CV page"><img class="image" src="images/docs.png" alt="A picture depicting a document." /></a>
+            </li>
+            <figcaption>CV</figcaption>
+          </figure>
+
+        </div>
+
+        <div class="aside-c">
+
+          <figure>
+            <li class="aside-img">
+              <a href = "contact.html" alt= "Navigate to contact page"><img class="image" src="images/contact.png" alt="A picture depicting an 'at' symbol"/></a>
+            </li>
+            <figcaption>Contact</figcaption>
+          </figure>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+    </div>
+
+
+    <footer class="footer">
+
+      <div class="copyright">
+        <p>
+          By D'Arcy Morley 2016 ©
+        </p>
+      </div>
+
+      <div class="contact">
+
+          <div class="phone">
+
+            <div class="p-icon">
+              <img class="footer-img" alt="Image depicting a phone." src="images/phone.png" />
+            </div>
+
+            <div class="p-text">
+              <h4>07123456789</h4>
+            </div>
+
+
+          </div>
+
+          <div class="email">
+
+            <div class="e-icon">
+              <img class="footer-img" alt="Image depicting an email." src="images/email.png" />
+            </div>
+
+            <div class="e-text">
+              <h4>darcymorley@gmail.com</h4>
+            </div>
+
+          </div>
+
+      </div>
+
     </footer>
 
   </body>

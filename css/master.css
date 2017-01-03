@@ -1,112 +1,286 @@
-/*******************************
-* FOOTER                       *
-*******************************/
+/*************************************************
+* MEDIA QUERIES                                  *
+*************************************************/
+@media(min-width:1024px) {
 
-.site{
+  .nav{
+    display:flex;
+    height:7em;
+  }
+
+  .aside{
+    flex:1;
+    display:flex-column;
+  }
+
+  .main{
+    flex:3;
+  }
+
+}
+
+
+@media(min-width:768px;) {
+
+  .nav{
+    display:flex;
+    height:7em;
+  }
+
+  .aside{
+    flex:2;
+    display:flex-column;
+  }
+
+  .main{
+    flex:2;
+  }
+
+}
+
+@media(min-width:600px) {
+
+  .nav{
+    display:flex;
+    height: 7em;
+  }
+
+  .main-aside{
+    display:flex;
+  }
+
+}
+
+@media(max-width: 599px) {
+
+  .nav{
+    height: 200px;
+  }
+
+  .button{
+    margin-bottom: 0.15em;
+  }
+
+}
+
+/*************************************************
+* NAVIGATION BAR POSITIONING                     *
+*************************************************/
+
+#title{
+  flex:4;
+}
+
+.button{
+  flex:1;
+}
+
+/*************************************************
+* PAGE HEADING POSITIONING                       *
+*************************************************/
+
+.page-header{
+  display:flex;
+  background: #C62828;
+  color:#FFEBEE;
+  opacity: 87%;
+}
+
+.page-title{
+  font-size: 2em;
+}
+
+/*************************************************
+* <aside> POSITIONING                            *
+*************************************************/
+
+.aside-a{flex:1;}
+.aside-b{flex:1;}
+.aside-c{flex:1;}
+
+/*************************************************
+* <footer> POSITIONING                           *
+*************************************************/
+
+/* STICKY FOOTER FIX                             */
+
+.not-footer{
   display: flex;
   flex-direction: column;
   min-height: 100VH;
 }
 
-.site_content{flex:1;}
+/* FOOTER CONTAINER LAYOUT                       */
 
-footer{
-  height: 5em;
-  border-top: 0.25em solid #F44336;
-  align-items: center;
+
+.copyright{flex:1;}
+.contact{
+  flex:1;
+  display:flex-column;
 }
 
+/* PHONE BLOCK POSITIONING               */
+
+.phone{
+  flex:1;
+  display:flex;
+}
+
+.p-icon{
+  display:flex;
+  margin:auto;
+}
+
+.p-text{
+  flex:1;
+  display:flex;
+  font-family: 'Roboto', sans-serif;
+  opacity:0.54;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+/* EMAIL BLOCK POSITIONING               */
+
+.email{
+  flex:1;
+  display:flex;
+
+}
+
+.e-icon{
+  display:flex;
+  margin:auto;
+}
+
+.e-text{
+  flex:1;
+  display:flex;
+  font-family: 'Roboto', sans-serif;
+  opacity:0.54;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+/***************************************************************
+* NEW CONTENT ADDED FROM PREVIOUS DEVELOPMENT                  *
+***************************************************************/
 
 /*******************************
 * NAVIGATION                   *
 *******************************/
 
 body{margin:auto;} /* Fix for whitespace around navbar */
+ul.nav{margin:0px;} /* Fix for whitespace around navbar */
 
-.nav_bar {
-  margin-top: none;
-  display:flex;
-  flex-direction: row;
-  /*flex: 1 0 auto;*/
-  justify-content: flex-end;
+.nav {
   align-items: center;
-  height: 7em;
   list-style-type: none;
   background: #F44336;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-#nav_title a {
-  align-self: flex-start;
+#title a {
+  opacity: 1;
   text-align: center;
   color:#FFEBEE;
   text-decoration: none;
   font-family: 'Pacifico', cursive;
-  font-size: 45px ;
-  text-align: center;
-  margin-bottom: 40px;
-  padding-right:100px;
+  font-size: 3em;
 }
 
-.nav_button a {
+.button a {
   text-align: center;
   color:#FFEBEE;
   text-decoration: none;
-  padding: 15px;
-  transition: 0.2s ease;
+  transition: 0.1s ease;
 }
 
-.nav_button a:hover{
-  border-bottom: 5px solid #FFEBEE;
-}
-
-.circle{
-  width:200px;
-  height:200px;
-  position: absolute;
-  /*border-radius: 50%;
-  border-color:black;
-  border-width:10px;*/
-}
-
-.page_links {
-  list-style-type: none;
-  display:flex;
-  flex-direction: row;
-  flex: 1 1 auto;
-  justify-content: space-around;
-  align-items: center;
-  font-family: 'Lato', sans-serif;
+.button a:hover{
+  border-bottom: 0.15em solid #FFEBEE;
 }
 
 /*******************************
 * TEXT CONTENT                 *
 *******************************/
+ul.nav{padding-left:30px;}
+
+.button{font-size: 1.25em;}
+
 h1{
-  font-family: 'Lato', sans-serif;
-  opacity:87%;
-  margin-left: 5%;
-  margin-right: 10%;
+  font-family: 'Roboto', sans-serif;
+  opacity:0.87;
+  margin-left: 40px;
+  font-size: 1.7em;
 }
+
 h2{
-  font-family: 'Lato', sans-serif;
-  opacity:87%;
-  margin-left: 5%;
-  margin-right: 10%;
+  font-family: 'Roboto', sans-serif;
+  opacity:0.87;
+  margin-left: 50px;
 }
-p{
-  font-family: 'Open Sans', sans-serif;
-  opacity:54%;
-  margin-left: 7%;
-  margin-right: 12%;
-}
+
 h3{
-  font-family: 'Open Sans', sans-serif;
-  opacity:54%;
-  margin-left: 7%;
-  margin-right: 12%;
-  padding-top: 0.5em;
+  font-family: 'Roboto', sans-serif;
+  opacity:0.54;
+  margin-left: 60px;
 }
-a{
-  opacity: 87%;
+
+p{
+  font-family: 'Roboto', sans-serif;
+  opacity:0.54;
+  margin-left: 60px;
+  margin-right: 20px;
+}
+
+a{opacity:0.70;}
+a:hover{opacity:1;}
+
+/*******************************
+* .ASIDE CONTENT               *
+*******************************/
+
+.aside {
+  list-style-type: none;
+}
+.image{
+  display:flex;
+  margin:auto;
+  width:15em;
+  height:15em;
+  border: 2px solid #FFCDD2;
+  opacity: 0.85;
+  transition: 0.2s ease;
+  padding: 1px;
+}
+
+.image:hover{
+  opacity:1;
+  border: 2px solid #B71C1C;
+}
+
+figcaption{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+  opacity: 0.75;
+}
+
+figcaption:hover{
+  opacity: 1;
+}
+
+/*******************************
+* FOOTER CONTENT               *
+*******************************/
+.footer{display:flex;}
+
+.footer-img{
+  width: 30px;
+  height:30px;
+  opacity:0.7;
+}
+
+.footer-img:hover{
+  opacity:1;
 }
