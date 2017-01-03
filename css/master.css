@@ -243,6 +243,11 @@ a:hover{opacity:1;}
 .aside {
   list-style-type: none;
 }
+
+.aside-img{
+  list-style-type: none;
+}
+
 .image{
   display:flex;
   margin:auto;
