@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<!-- D'ARCY MORLEY, 16432614 -->
+
 <html>
 
   <head>
@@ -38,28 +41,18 @@
 
         <main class ="main">
 
-          <h2>Contact</h2>
+          <h2>Contact Information</h2>
+          <p>All necessary contact information can be found in the footer of the page. Although if you need to contact myself directly, please use the form below to send your message via email.</p>
 
-          <ul class= "contact_info">
-            <li>Phone number</li>
-            <li>Email</li>
-            <li>Twitter</li>
-          </ul>
+          <form>
 
-          <form action="messages.php" method="POST">
-
-            First name:
-            <input type="text" name="firstname" value="Insert your first name here...">
+            <input class="contact-form-text" type="text" name="firstname" placeholder="Insert your first name here..."/>
             <br>
-            Surname:
-            <input type="text" name="surname" value="Insert your surname here...">
+            <input  class="contact-form-text" type="text" name="surname" placeholder="Insert your surname here..." />
             <br>
-            Message:
-            <textarea name="message" rows="10" cols="30">
-            Insert your message here:
-            </textarea>
+            <textarea  class="contact-form-text" name="message" rows="10" cols="30" placeholder="Insert your message here:"></textarea>
             <br>
-            <input type="submit" value="Submit">
+            <a href="mailto:darcymorley@gmail.com"><input type="submit"></a>
 
           </form>
 

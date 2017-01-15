@@ -1,3 +1,5 @@
+/* D'ARCY MORLEY, 16432614   */
+
 /*************************************************
 * MEDIA QUERIES                                  *
 *************************************************/
@@ -231,6 +233,7 @@ p{
   opacity:0.54;
   margin-left: 60px;
   margin-right: 20px;
+  line-height: 2em;
 }
 
 a{opacity:0.70;}
@@ -288,4 +291,20 @@ figcaption:hover{
 
 .footer-img:hover{
   opacity:1;
+}
+
+/********************************
+* CONTACT FORM                  *
+********************************/
+
+form{
+  margin-left: 80px;
+
+}
+
+.contact-form-text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  width: 400px;
+  margin-bottom: 1.5em;
 }
